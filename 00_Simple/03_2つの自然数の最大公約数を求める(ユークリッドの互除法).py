@@ -6,8 +6,8 @@
 # ④③の操作をあまりが出なくなるまで繰り返す。
 # ⑤最後の計算の割る数が求める最大公約数である。
 
-input1 = input()
-input2 = input()
+input1 = int(input())
+input2 = int(input())
 
 def CalcGreatestCommonDivisor(denominator, surplus):
     if surplus == 0:
@@ -15,4 +15,4 @@ def CalcGreatestCommonDivisor(denominator, surplus):
     else:
         return CalcGreatestCommonDivisor(surplus, denominator % surplus)
 
-print(CalcGreatestCommonDivisor(int(input1), int(input2)))
+print(CalcGreatestCommonDivisor(input1, input2))
